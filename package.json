@@ -1,8 +1,8 @@
 {
-  "name": "next-drizzle-sqllite-stack",
+  "name": "next-drizzle-sqlite-stack",
   "version": "0.1.0",
   "private": true,
-  "repository": "git@github.com:Callenowy/next-drizzle-sqllite-stack",
+  "repository": "git@github.com:Callenowy/next-drizzle-sqlite-stack",
   "license": "MIT",
   "author": "Callenowy",
   "scripts": {
