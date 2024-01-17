@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
+    "format:check": "prettier --list-different \"**/*.{ts,tsx,js,jsx,md}\"",
     "postinstall": "husky install"
   },
   "dependencies": {
