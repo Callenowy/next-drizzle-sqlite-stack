@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "github.vscode-github-actions",
+    "esbenp.prettier-vscode",
+    "snyk-security.snyk-vulnerability-scanner",
+    "bradlc.vscode-tailwindcss",
+  ]
+}
