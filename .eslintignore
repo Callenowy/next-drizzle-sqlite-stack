@@ -1,0 +1,10 @@
+.next/*
+.github/*
+.husky/*
+.vscode/*
+dist/*
+public/*
+out/*
+node_modules/*
+.eslintrc.cjs
+postcss.*
