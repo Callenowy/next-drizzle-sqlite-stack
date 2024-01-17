@@ -12,6 +12,10 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
     "format:check": "prettier --list-different \"**/*.{ts,tsx,js,jsx,md}\"",
+    "test": "npm run test:unit",
+    "test:unit": "vitest",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:unit:ui": "vitest --ui",
     "postinstall": "husky install"
   },
   "dependencies": {
