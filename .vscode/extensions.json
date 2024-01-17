@@ -6,5 +6,6 @@
     "esbenp.prettier-vscode",
     "snyk-security.snyk-vulnerability-scanner",
     "bradlc.vscode-tailwindcss",
+    "zixuanchen.vitest-explorer",
   ]
 }

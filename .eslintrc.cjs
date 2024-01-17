@@ -23,4 +23,16 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/no-import-type-side-effects': 'error',
   },
+
+  overrides: [
+    {
+      files: [
+        '**/__test__/**/*.[jt]s?(x)',
+        '**/?(*.)+test.[jt]s?(x)',
+        '!**/tests/playwright/**/*.ts',
+      ],
+      plugins: ['testing-library'],
+      extends: ['plugin:testing-library/react', 'plugin:jest-dom/recommended'],
+    },
+  ],
 };
