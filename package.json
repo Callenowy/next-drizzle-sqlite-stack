@@ -20,7 +20,7 @@
     "db:migration:generate": "drizzle-kit generate:sqlite",
     "db:migration:run": "tsx ./src/db/migrate.ts",
     "db:check": "drizzle-kit up:sqlite",
-    "db:studio": "drizzzle-kit studio",
+    "db:studio": "npx drizzzle-kit studio",
     "db:seed": "tsx ./src/db/seed.ts"
   },
   "dependencies": {
