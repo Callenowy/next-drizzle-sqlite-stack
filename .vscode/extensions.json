@@ -7,5 +7,6 @@
     "snyk-security.snyk-vulnerability-scanner",
     "bradlc.vscode-tailwindcss",
     "zixuanchen.vitest-explorer",
+    "qwtel.sqlite-viewer",
   ]
 }
