@@ -3,6 +3,10 @@ import { DefaultLayout } from '@/layouts/default';
 import { Heading } from '@/components/heading';
 import { Text } from '@/components/text';
 import { Card } from '@/components/card';
+import { DataTable } from '@/components/dataTable';
+
+import { getServerList } from './actions';
+import { columns } from './columns';
 
 export const metadata: Metadata = {
   title: 'Server list',
@@ -10,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function ServerList() {
+  const data = getServerList();
+
   return (
     <DefaultLayout>
       <div className="mx-auto w-full max-w-2xl px-6 py-[70px]">
@@ -25,7 +31,9 @@ export default function ServerList() {
           </Text>
         </div>
 
-        <Card>nothing here</Card>
+        <Card>
+          <DataTable columns={columns} data={data} />
+        </Card>
       </div>
     </DefaultLayout>
   );
