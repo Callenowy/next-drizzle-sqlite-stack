@@ -21,7 +21,8 @@
     "db:migration:run": "tsx ./src/db/migrate.ts",
     "db:check": "drizzle-kit up:sqlite",
     "db:studio": "npx drizzzle-kit studio",
-    "db:seed": "tsx ./src/db/seed.ts"
+    "db:seed": "tsx ./src/db/seed.ts",
+    "db:user:create": "tsx ./src/db/userCreate.ts"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^0.3.17",
