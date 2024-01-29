@@ -188,4 +188,4 @@ Here is a list of upcoming functionalities and improvements:
 
 ## <a name="license">License</a>
 
-Developer App is software licensed under the [MIT license](LICENSE).
+The Stack App is software licensed under the [MIT license](LICENSE).
