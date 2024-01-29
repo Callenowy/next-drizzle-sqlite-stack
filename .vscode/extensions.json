@@ -6,7 +6,10 @@
     "esbenp.prettier-vscode",
     "snyk-security.snyk-vulnerability-scanner",
     "bradlc.vscode-tailwindcss",
+    "hbenl.vscode-test-explorer",
+    "ms-vscode.test-adapter-converter",
+    "ms-playwright.playwright",
     "zixuanchen.vitest-explorer",
-    "qwtel.sqlite-viewer",
+    "ms-azuretools.vscode-docker"
   ]
 }
