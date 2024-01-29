@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  next-app:
+    container_name: the_stack_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_HOST: ${NEXT_PUBLIC_HOST}
+        DB_PATH: ${DB_PATH}
+        APP_PEPPER: ${APP_PEPPER}
+        NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+        NEXTAUTH_URL: ${NEXTAUTH_URL}
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - the_stack_network
+
+networks:
+  the_stack_network:
+    external: true
