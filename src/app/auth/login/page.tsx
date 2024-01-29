@@ -11,18 +11,20 @@ import { Alert } from '@/components/alert';
 
 import type { LoginSchema } from '@/models';
 
+import { handleLogin } from '../action';
+
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>(
     undefined
   );
 
-  const handleSubmit = (data: LoginSchema) => {
+  const handleSubmit = async (data: LoginSchema) => {
     try {
       setErrorMessage(undefined);
       setIsLoading(true);
-      console.log(data);
-      //await handleLogin(data);
+
+      await handleLogin(data);
     } catch (error: unknown) {
       setErrorMessage('Unable to authenticate with the given credentials.');
       setIsLoading(false);
@@ -56,7 +58,7 @@ export default function LoginPage() {
 
           {errorMessage && <Alert message={errorMessage} />}
 
-          <LoginForm onSubmit={handleSubmit} />
+          <LoginForm onSubmit={data => void handleSubmit(data)} />
         </>
       )}
     </LoginCard>
