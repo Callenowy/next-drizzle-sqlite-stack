@@ -40,3 +40,4 @@ src/db/db.sqlite
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+/tests/playwright/.auth/
