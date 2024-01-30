@@ -32,6 +32,8 @@
 
 The Stack is a web application developed using Next.js. It serves as a recruitment task, allowing users to interact with a server explorer interface. This app displays a list of servers along with their distance from the user, and users can sort this list by name or distance. The flag of the country to which the server belongs accompanies it.
 
+> Please note that the current solution differs from the one initially provided in the technical task. In the original version, my task involved requesting specified authentication and server list retrieval endpoints. The current solution simulates similar behavior using Drizzle ORM, SQLite, and Argon2, representing a shift in the implementation approach.
+
 Solution available at URL [https://developer-app-rana.fly.dev](https://developer-app-rana.fly.dev)
 
 ## <a name="getting-started">Getting Started</a>
