@@ -80,7 +80,7 @@
     "autoprefixer": "^10.0.1",
     "cross-env": "^7.0.3",
     "drizzle-kit": "^0.20.13",
-    "eslint": "^8",
+    "eslint": "^9.0.0",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest-dom": "^5.1.0",
